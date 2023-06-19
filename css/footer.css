@@ -1,0 +1,39 @@
+/* ----------------- footer ----------------- */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 7px;
+  padding-bottom: 20px;
+}
+
+/* ----------------- key-row ----------------- */
+.key-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ----------------- key-block ----------------- */
+.key-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: #d3d6da;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.enter,
+.back {
+  width: 65px;
+  font-size: 12px;
+}
+.back img {
+  width: 25px;
+}
