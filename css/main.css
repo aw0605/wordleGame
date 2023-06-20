@@ -31,4 +31,6 @@ main {
   width: 48px;
   height: 48px;
   border: 2px solid #d3d6da;
+  font-size: 20px;
+  font-weight: bold;
 }
