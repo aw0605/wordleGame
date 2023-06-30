@@ -1,5 +1,3 @@
-const answer = "APPLE";
-
 let attempts = 0;
 let index = 0;
 
@@ -30,8 +28,14 @@ function appStart() {
 
   // handleEnterkey =========================================
   // Enter키 눌렀을 때, 정답확인
-  const handleEnterKey = () => {
+  const handleEnterKey = async () => {
     let correct = 0;
+
+    // 서버에서 정답을 받아오는 코드
+    // await: 서버에서 서버로 요청을 보낸 이후, 그에대한 응답이 올 때까지 기다리는 구문
+    // json(javascript object notation): 자바스크립트에 맞는 포맷으로 바꿔주는 구문
+    const response = await fetch("/answer");
+    const answer = await response.json();
 
     // for문으로 index별 blockText와 answerText 구하고 비교
     for (let i = 0; i < 5; i++) {
